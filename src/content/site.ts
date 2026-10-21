@@ -92,8 +92,8 @@ export const prototype = {
 };
 
 export const team: { name: string; role: string }[] = [
+  { name: "Eva Ivanusyková", role: "Team member" },
+  { name: "Deva Roggatz", role: "Team member" },
   { name: "Jakob Varenbud", role: "Team member" },
-  { name: "Team member 2", role: "Team member" },
-  { name: "Team member 3", role: "Team member" },
-  { name: "Team member 4", role: "Team member" },
+  { name: "Elena Chistiakova", role: "Team member" },
 ];
