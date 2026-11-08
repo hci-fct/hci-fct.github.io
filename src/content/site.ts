@@ -79,6 +79,19 @@ export const stages: {
   },
 ];
 
+// Individual lab assignments. Add a new entry when someone submits theirs.
+export const assignments: { title: string; text: string; reports: { author: string; file: string }[] }[] = [
+  {
+    title: "Lab Assignment 1 · Good & Bad UI",
+    text: "Each of us analysed real-world examples of good and bad user interface design.",
+    reports: [
+      { author: "Deva Roggatz", file: "/reports/lab1-deva-roggatz.pdf" },
+      { author: "Elena Chistiakova", file: "/reports/lab1-elena-chistiakova.pdf" },
+      { author: "Eva Ivanusyková", file: "/reports/lab1-eva-ivanusykova.pdf" },
+    ],
+  },
+];
+
 export const prototype = {
   briefing:
     "Imagine you just got accepted for an Erasmus semester at NOVA FCT in Lisbon. You don't speak Portuguese yet and you need to organise your documents, find your way around campus and choose your courses. Erasmus@FCT is a platform that gathers all the information you need for this in one place.",

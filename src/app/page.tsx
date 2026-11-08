@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
-import { about, prototype, site, stages, team, type Status } from "@/content/site";
+import { about, assignments, prototype, site, stages, team, type Status } from "@/content/site";
 
 const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const asset = (path: string) => (path.startsWith("/") ? base + path : path);
@@ -168,6 +168,29 @@ export default function Home() {
                 );
               })}
             </ol>
+
+            {assignments.map((a) => (
+              <Reveal key={a.title} className="mt-12 rounded-3xl bg-white p-6 ring-1 ring-slate-200 sm:p-8">
+                <p className="text-sm font-semibold uppercase tracking-widest text-azul-600">Individual work</p>
+                <h3 className="mt-2 text-lg font-semibold text-slate-900">{a.title}</h3>
+                <p className="mt-1 text-sm text-slate-600">{a.text}</p>
+                <ul className="mt-5 grid gap-3 sm:grid-cols-3">
+                  {a.reports.map((r) => (
+                    <li key={r.file}>
+                      <a
+                        href={asset(r.file)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-azul-200 hover:bg-azul-50/40 hover:text-azul-700"
+                      >
+                        {r.author}
+                        <span className="text-azul-600 transition-transform group-hover:translate-x-1">PDF →</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            ))}
           </div>
         </section>
 
