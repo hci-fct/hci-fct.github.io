@@ -88,6 +88,7 @@ export const assignments: { title: string; text: string; reports: { author: stri
       { author: "Deva Roggatz", file: "/reports/lab1-deva-roggatz.pdf" },
       { author: "Elena Chistiakova", file: "/reports/lab1-elena-chistiakova.pdf" },
       { author: "Eva Ivanusyková", file: "/reports/lab1-eva-ivanusykova.pdf" },
+      { author: "Jakob Varenbud", file: "/reports/lab1-jakob-varenbud.pdf" },
     ],
   },
 ];

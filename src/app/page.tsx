@@ -174,7 +174,7 @@ export default function Home() {
                 <p className="text-sm font-semibold uppercase tracking-widest text-azul-600">Individual work</p>
                 <h3 className="mt-2 text-lg font-semibold text-slate-900">{a.title}</h3>
                 <p className="mt-1 text-sm text-slate-600">{a.text}</p>
-                <ul className="mt-5 grid gap-3 sm:grid-cols-3">
+                <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                   {a.reports.map((r) => (
                     <li key={r.file}>
                       <a
